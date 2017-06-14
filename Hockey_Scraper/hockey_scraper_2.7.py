@@ -36,13 +36,16 @@ def scrape_data():
         for entry in table:
             if str(index)[-1] == '0':
                 data = entry.find('a').contents
+                data = data[0].encode('utf-8')
                 data = str(data).replace('[', '')
                 data = str(data).replace(']', '')
                 data = str(data).replace("'", '')
+                data = str(data).replace('"', '')
                 list.append(names, data)
 
             if str(index)[-1] == '1':
                 data = entry.find('a').contents
+                data = data[0].encode('utf-8')
                 data = str(data).replace('[', '')
                 data = str(data).replace(']', '')
                 data = str(data).replace("'", '')
@@ -50,6 +53,7 @@ def scrape_data():
 
             if str(index)[-1] == '2':
                 data = entry.contents
+                data = data[0].encode('utf-8')
                 data = str(data).replace('[', '')
                 data = str(data).replace(']', '')
                 data = str(data).replace("'", '')
@@ -57,6 +61,7 @@ def scrape_data():
 
             if str(index)[-1] == '3':
                 data = entry.contents
+                data = data[0].encode('utf-8')
                 data = str(data).replace('[', '')
                 data = str(data).replace(']', '')
                 data = str(data).replace("'", '')
@@ -64,6 +69,7 @@ def scrape_data():
 
             if str(index)[-1] == '4':
                 data = entry.contents
+                data = data[0].encode('utf-8')
                 data = str(data).replace('[', '')
                 data = str(data).replace(']', '')
                 data = str(data).replace("'", '')
@@ -77,6 +83,7 @@ def scrape_data():
                 data = str(data).replace("'", '')
                 data = str(data).replace(' ', '')
                 data = str(data).replace('\\xa0', '')
+                data = str(data.replace('u', ''))
                 list.append(salary_17_18, data)
 
             if str(index)[-1] == '6':
@@ -87,6 +94,7 @@ def scrape_data():
                 data = str(data).replace("'", '')
                 data = str(data).replace(' ', '')
                 data = str(data).replace('\\xa0', '')
+                data = str(data.replace('u', ''))
                 list.append(salary_18_19, data)
 
             if str(index)[-1] == '7':
@@ -97,6 +105,7 @@ def scrape_data():
                 data = str(data).replace("'", '')
                 data = str(data).replace(' ', '')
                 data = str(data).replace('\\xa0', '')
+                data = str(data.replace('u', ''))
                 list.append(salary_19_20, data)
 
             if str(index)[-1] == '8':
@@ -107,6 +116,7 @@ def scrape_data():
                 data = str(data).replace("'", '')
                 data = str(data).replace(' ', '')
                 data = str(data).replace('\\xa0', '')
+                data = str(data.replace('u', ''))
                 list.append(salary_20_21, data)
 
             if str(index)[-1] == '9':
@@ -117,6 +127,7 @@ def scrape_data():
                 data = str(data).replace("'", '')
                 data = str(data).replace(' ', '')
                 data = str(data).replace('\\xa0', '')
+                data = str(data.replace('u', ''))
                 list.append(salary_21_22, data)
 
             index += 1
@@ -133,12 +144,14 @@ def gen_output(names, teams, positions, cap_number_17_18, cap_number_18_19,
     scraped_data['position'] = positions
     scraped_data['cap_number_17_18'] = cap_number_17_18
     scraped_data['cap_number_18_19'] = cap_number_18_19
+
     scraped_data['salary_17_18'] = salary_17_18
     scraped_data['salary_18_19'] = salary_18_19
     scraped_data['salary_19_20'] = salary_19_20
     scraped_data['salary_20_21'] = salary_20_21
     scraped_data['salary_21_22'] = salary_21_22
-    scraped_data.to_csv('hockey_output.csv', index=False)
+
+    scraped_data.to_csv('hockey_output_2.7.csv', index=False)
 
 if __name__ == '__main__':
 
