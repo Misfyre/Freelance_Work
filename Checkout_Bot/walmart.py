@@ -1,6 +1,6 @@
 __author__ = 'Nick Sarris (ngs5st)'
 
-import os
+import re
 import json
 import requests
 from bs4 import BeautifulSoup
@@ -9,7 +9,7 @@ class Walmart():
 
     def __init__(self, email, password, first_name, last_name,
                  address_1, address_2, city, state, zip_code,
-                 card_number, owner, expiration, cvv):
+                 card_number, owner, expiration, cvv, item_url):
 
         self.email = email
         self.password = password
@@ -25,6 +25,7 @@ class Walmart():
         self.expiration = expiration
         self.cvv = cvv
 
+        self.item_url = item_url
         self.scraper = requests.session()
 
     def login(self):
@@ -65,7 +66,7 @@ class Walmart():
 
         url = 'https://www.walmart.com/account/electrode/api/signin'
         response = self.scraper.post(url, data=json.dumps(payload), headers=headers)
-        print(response.text)
+        print(response)
 
     def logout(self):
 
@@ -82,7 +83,41 @@ class Walmart():
         response = self.scraper.get(url, headers=headers)
         print(response)
 
+    def add_to_cart(self):
+
+        response = self.scraper.get(self.item_url)
+        soup = BeautifulSoup(response.text, "lxml")
+        marker = re.compile('"offers":{".*":')
+        marker = str(re.findall(marker, response.text)).split(':')[1]
+        marker = str(marker).lstrip('{"').rstrip('"')
+        url = 'https://www.walmart.com/api/v3/cart/customer/:CID/items'
+
+        headers = {
+            'accept': 'application/json',
+            'accept-encoding': 'gzip, deflate, br',
+            'accept-language': 'en-US,en;q=0.8',
+            'content-length': '131',
+            'content-type': 'application/json',
+            'origin': 'https://www.walmart.com',
+            'referer': self.item_url,
+            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ('
+                          'KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36',
+        }
+
+        payload = {
+            "quantity": 1,
+            "shipMethodDefaultRule": "SHIP_RULE_1",
+            "offerID": marker,
+            "location": {"postalCode": self.zip_code}
+        }
+
+        #print(payload)
+        response = self.scraper.post(url, data=json.dumps(payload), headers=headers)
+        print(response)
+        print(response.text)
+
 if __name__ == '__main__':
     Walmart('sarris.nick@verizon.net','6z4u8959','Nick','Sarris',
             '7411 Chipping Road','','Norfolk','Virginia','23505',
-            '5538790001233507','Nick Sarris','12/19','650').login()
+            '5538790001233507','Nick Sarris','12/19','650',
+            'https://www.walmart.com/ip/EEEKit-for-Nintendo-NES-Classic-Mini-Edition-Carry-Case-Bag-One-Game-Controller-Gamepad-2-Pcs-Extension-Cable/188000042').add_to_cart()
