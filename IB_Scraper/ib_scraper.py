@@ -42,8 +42,7 @@ def scraper(url):
 
 def main():
 
-    url = 'https://www.interactivebrokers.com/en/index.php?' \
-          'f=2222&exch=globex&showcategories=FUTGRP'
+    url = 'https://www.interactivebrokers.com/en/index.php?f=2222&exch=globex&showcategories=FUTGRP'
     ib_symbols, descriptions, symbols, currencies = scraper(url)
 
     final_data = []
