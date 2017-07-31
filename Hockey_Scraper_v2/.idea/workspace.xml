@@ -15,8 +15,8 @@
       <file leaf-file-name="hockey_scraper_3.6.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="595" column="46" lean-forward="false" selection-start-line="595" selection-start-column="46" selection-end-line="595" selection-end-column="46" />
+            <state relative-caret-position="225">
+              <caret line="590" column="27" lean-forward="false" selection-start-line="590" selection-start-column="27" selection-end-line="590" selection-end-column="27" />
               <folding>
                 <element signature="e#37#47#0" expanded="true" />
               </folding>
@@ -83,7 +83,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
-    <option name="width" value="1595" />
+    <option name="width" value="1593" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectView">
@@ -101,7 +101,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -117,6 +116,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,10 +241,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="0" width="1595" height="1030" extended-state="0" />
-    <editor active="true" />
+    <frame x="-10" y="0" width="1593" height="1030" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23204069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23233609" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44393063" sideWeight="0.502574" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49365628" sideWeight="0.497426" order="2" side_tool="false" content_ui="tabs" />
@@ -269,11 +268,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -335,8 +344,8 @@
     <entry file="file://$PROJECT_DIR$/player_data_201617_PP_corsi.csv" />
     <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="595" column="46" lean-forward="false" selection-start-line="595" selection-start-column="46" selection-end-line="595" selection-end-column="46" />
+        <state relative-caret-position="225">
+          <caret line="590" column="27" lean-forward="false" selection-start-line="590" selection-start-column="27" selection-end-line="590" selection-end-column="27" />
           <folding>
             <element signature="e#37#47#0" expanded="true" />
           </folding>

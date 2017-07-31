@@ -579,8 +579,16 @@ def main():
 
     report_list = ['individual','goals','shots','fenwick','corsi']
 
+    print('')
+    print('Possible Years: {}'.format(year_list))
     year = input("Which Year Do You Want to Scrape? (Enter 'All' for All of Them): ")
+
+    print('')
+    print('Possible Situations: {}'.format(situation_list))
     situation = input("Which Situation Do You Want to Scrape? (Enter 'All' for All of Them): ")
+
+    print('')
+    print('Possible Reports: {}'.format(report_list))
     report = input("Which Report Do You Want to Scrape? (Enter 'All' for All of Them): ")
 
     if year not in year_list:
