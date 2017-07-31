@@ -15,8 +15,8 @@
       <file leaf-file-name="hockey_scraper_3.6.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-225">
-              <caret line="595" column="71" lean-forward="false" selection-start-line="595" selection-start-column="71" selection-end-line="595" selection-end-column="71" />
+            <state relative-caret-position="350">
+              <caret line="595" column="46" lean-forward="false" selection-start-line="595" selection-start-column="46" selection-end-line="595" selection-end-column="46" />
               <folding>
                 <element signature="e#37#47#0" expanded="true" />
               </folding>
@@ -101,8 +101,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,8 +242,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="0" width="1595" height="1030" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23204069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23204069" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44393063" sideWeight="0.502574" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49365628" sideWeight="0.497426" order="2" side_tool="false" content_ui="tabs" />
@@ -295,6 +296,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#37#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2800">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
@@ -307,50 +328,15 @@
     <entry file="file://$PROJECT_DIR$/player_data.csv" />
     <entry file="file://$PROJECT_DIR$/player_data_201213.csv" />
     <entry file="file://$PROJECT_DIR$/player_data_201617_PP_individual.csv" />
-    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_shotts.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_goals.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="12" lean-forward="true" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_shots.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_fenwick.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_corsi.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_shotts.csv" />
+    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_goals.csv" />
+    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_shots.csv" />
+    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_fenwick.csv" />
+    <entry file="file://$PROJECT_DIR$/player_data_201617_PP_corsi.csv" />
     <entry file="file://$PROJECT_DIR$/hockey_scraper_3.6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="595" column="71" lean-forward="false" selection-start-line="595" selection-start-column="71" selection-end-line="595" selection-end-column="71" />
+        <state relative-caret-position="350">
+          <caret line="595" column="46" lean-forward="false" selection-start-line="595" selection-start-column="46" selection-end-line="595" selection-end-column="46" />
           <folding>
             <element signature="e#37#47#0" expanded="true" />
           </folding>

@@ -584,16 +584,16 @@ def main():
     report = input("Which Report Do You Want to Scrape? (Enter 'All' for All of Them): ")
 
     if year not in year_list:
-        if year is not 'All':
+        if year != 'All':
             sys.exit('KeyError: Invalid Year (Check Lists for Examples)')
 
     if situation not in situation_list:
-        if situation is not 'All':
+        if situation != 'All':
             sys.exit('KeyError: Invalid Situation (Check Lists for Examples)')
 
     if report not in report_list:
-        if report is not 'All':
-            sys.exit('KeyError: Invalid Type (Check Lists for Examples)')
+        if report != 'All':
+            sys.exit('KeyError: Invalid Report (Check Lists for Examples)')
 
     if year == 'All':
         if situation == 'All':
